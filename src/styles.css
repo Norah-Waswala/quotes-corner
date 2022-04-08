@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    background-image: url(./assets/background.png);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    color: rgb(131, 8, 131);
+}
+ 
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .nav-item{
+   display: inline;
+   float: left;
+   /* padding: 10px; */
+   margin-top: 50px; 
+   padding-left: 150px;
+} 
+.nav-item a {
+    display: block;
+    padding: 8px;
+    font-size: large;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+  a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  /* a:visited {
+    color: rgb(192, 21, 49);
+    background-color: transparent;
+    text-decoration: none;
+  } */
+  a:hover {
+    color: rgb(10, 73, 2);
+    background-color: transparent;
+    text-decoration: underline;
+  }

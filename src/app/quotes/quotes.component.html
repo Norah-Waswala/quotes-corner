@@ -1,1 +1,11 @@
-<p>quotes works!</p>
+<div class="quotes">
+    <h1>Among our favorite!</h1>
+    <hr>
+    <ul>
+      <li *ngFor='let quote of quotes'>
+        {{quote.id}}
+        {{quote.userName}}
+        {{quote.quoteTitle}}
+      </li>
+    </ul>
+</div>
