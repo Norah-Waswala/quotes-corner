@@ -1,1 +1,6 @@
-<p>quote-likes works!</p>
+<div class="votes">
+<p>{{numberOfLikes}}</p>
+<img (click)="likesImgClick()" src="../../assets/like1.jpg" alt="">
+<p>{{numberOfDislike}}</p>
+<img (click)="dislikeImgClick()" id="unlike" src="../../assets/unlike.jpg" alt="">
+</div>

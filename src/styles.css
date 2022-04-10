@@ -174,5 +174,12 @@ margin-bottom: 1rem;
   padding: 6.5rem;
   color: rgba(255, 0, 0, 0.548);
 }
+/* voting styles */
+.votes{
+  display: inline-flex;
+}
+.votes p{
+margin-left: 10em;
+}
 
 
