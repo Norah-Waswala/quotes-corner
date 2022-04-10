@@ -1,3 +1,4 @@
+      <h2>create your own quote here!</h2>
       <p> Borders box are hidden </p>
     <form #quoteform="ngForm" id="form">
 
@@ -6,11 +7,12 @@
         <div class="mb-3">
           <label for="userName" class="form-label-author">Author : </label>
         
-          <input type="text" class="form-control-author" id="userNameInput" [(ngModel)]="newquote.userName" userName="userName" #userName='ngModel' required placeholder=" author ">
-          <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
+          <input type="text" class="form-control-author" id="userNameInput" [(ngModel)]="newQuotes.userName" userName="userName" #userName='ngModel' required placeholder=" author ">
+          <p> display {{newQuotes.userName}}</p>
+          <!-- <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
             <p>Name is required</p>
             Display {{newquote.userName}}
-          </div>
+          </div> -->
         </div>
         
 
@@ -34,7 +36,7 @@
       <div class="form-group">
         <label for="complete">Submitted on : </label>
           <input type='date' id="complete" class="form-group-date" required> <br>
-          <button  type="submit" class="btn btn-success" style="margin-top: 1rem;"> Add Goal </button>
+          <button  type="submit" class="btn btn-success" style="margin-top: 1rem;"> Add Quote </button>
       </div>
     </form>
    
