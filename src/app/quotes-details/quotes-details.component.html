@@ -3,20 +3,24 @@
 <div class="descriptions">
     <ul>
       <li >Submitted by : {{quote.userName}} </li> 
-      <li >created on {{quote.completeDate|date}}</li>
+      <li >created on {{quote.submitDate|date}}</li>
     </ul>
 </div>
 
 <p class="Quote-Description">{{quote.quoteDescription}}</p>
 
 <!-- Quote Date -->
-
-<p class="date">{{quote.completeDate| dateCount}} days</p>
+<div class="author">
+  <ul>
+  <li class="date"> Author: {{quote.author}}</li>
+  <li class="date">{{quote.submitDate| dateCount}} days</li>
+</ul>
+</div>
 
 <div class="delete">
    
     
-    <img id="like" src="../../assets/like1.jpg" alt="">
+    <img (click)='quoteDelete(true)'id="like" src="../../assets/like1.jpg" alt="">
     <img id="unlike" src="../../assets/unlike.jpg" alt="">
     <img id="delete" (click)="quoteDelete(true)" src="../../assets/del.png" alt="">
 
