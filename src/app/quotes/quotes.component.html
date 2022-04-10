@@ -1,11 +1,47 @@
-<div class="quotes">
-    <h1>Among our favorite!</h1>
-    <hr>
-    <ul>
-      <li *ngFor='let quote of quotes'>
-        {{quote.id}}
-        {{quote.userName}}
-        {{quote.quoteTitle}}
-      </li>
+<h1>Among our favorite!</h1>
+    <!-- <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          Column
+        </div>
+        <div class="col">
+          Column
+        </div>
+        <div class="col">
+          Column
+        </div>
+      </div>
+    </div> -->
+    <div class="form">
+      <app-quote-form></app-quote-form>
+    </div>
+    <div class="quote">
+
+    
+    <ul id="list">
+      <div *ngFor="let quote of quote;let i=index" >
+       <li> {{quote.userName}}
+            {{quote.quoteTitle}}
+            <p>created on {{quote.completeDate|date}}</p>
+          </li>
+      <button (click)="toggleDetails(i)">show Description</button>
+      <div class="details">
+        <app-quotes-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)="deleteQuote($event,i)"></app-quotes-details>
+      </div>
+       
+        
+      </div>
     </ul>
-</div>
+  </div>
+    <!-- <ul>
+      <div  *ngFor="let quote of quotes;let i=index">
+        <li>{{quote.quoteTitle}}</li>
+      
+      
+     
+      <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quote'></app-quotes-details>
+      
+    </div>
+    </ul>
+</div> -->

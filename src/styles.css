@@ -1,12 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 *{
-    background-image: url(./assets/background.png);
+    background-image: url(./assets/bg.jpg);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    /* background-position: center; */
+
 }
 h1{
     text-align: center;
@@ -34,7 +36,7 @@ h1{
     font-family: sans-serif;
   }
   a:link {
-    color: black;
+    color: rgb(117, 7, 7);
     background-color: transparent;
     text-decoration: none;
   }
@@ -44,7 +46,36 @@ h1{
     text-decoration: none;
   } */
   a:hover {
-    color: rgb(10, 73, 2);
+    color: rgb(73, 9, 146);
     background-color: transparent;
     text-decoration: underline;
   }
+  /* quotes styles */
+  .details{
+    
+    display: block;
+    max-width: 300px;
+    max-height: 200px;
+    
+  }
+  .quotes{
+    display: inline;
+  
+  }
+    #list{
+    border: 3px solid #73AD21;
+    background: #5ab60e;
+    color: darkblue;
+    margin-left: 200px;
+  list-style: none;
+  display: inline-block;
+  } 
+  /* #list ul {
+    background: #e41414;
+    padding: 10px;
+  margin-left: 100px;
+  }  */
+.delete img{
+  max-width: 20px;
+  max-height: 20px;
+}

@@ -1,0 +1,32 @@
+
+    <form #quoteform="ngForm">
+        <div class="mb-3"></div>
+        <label for="userName" class="form-label">Your userName</label>
+        <br>
+        <input type="text" class="form-control" id="userNameInput" [(ngModel)]="newquote.userName" userName="userName" #userName='ngModel' required placeholder="input userName">
+        <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
+            <p>Name is required</p>
+            Display {{newquote.userName}}
+        </div>
+      <div class="mb-3">
+        <label for="quoteTitle" class="form-label">Quote Title</label>
+        <br>
+        <input type="text" class="form-control" id="quoteTitleInput" placeholder="input Title">
+      </div>
+      <div class="mb-3">
+        <label for="quoteDescription" class="form-label">quote details</label>
+        <br>
+        <input type="text" class="form-control" id="quoteDescriptionInput" placeholder="input quote details">
+      </div>
+      <div class="form-group"></div>
+      <label for="complete">Completion</label>
+          <input type='date' id="complete" required>
+
+      <!-- </div> -->
+      <button type="submit" class="btn btn-success">Add Goal</button>
+    </form>
+   
+  <!-- <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+  </div> -->
