@@ -16,24 +16,25 @@
     <div class="form">
       <app-quote-form></app-quote-form>
     </div>
+    <!-- Quote -->
+
     <div class="quote">
 
-    
-    <ul id="list">
-      <div *ngFor="let quote of quote;let i=index" >
-       <li> {{quote.userName}}
-            {{quote.quoteTitle}}
-            <p>created on {{quote.completeDate|date}}</p>
+    <!-- Full Quote  -->
+
+      <ul id="list">
+        <div *ngFor="let quote of quote;let i=index" >
+          <li> 
+            <p class="user1">Title : {{quote.quoteTitle}}</p>
+            <button (click)="toggleDetails(i)"> Show Quote </button>
           </li>
-      <button (click)="toggleDetails(i)">show Description</button>
-      <div class="details">
-        <app-quotes-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)="deleteQuote($event,i)"></app-quotes-details>
-      </div>
-       
-        
-      </div>
-    </ul>
-  </div>
+            
+          <div class="details">
+            <app-quotes-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)="deleteQuote($event,i)"></app-quotes-details>
+          </div>
+        </div>
+      </ul>
+    </div>
     <!-- <ul>
       <div  *ngFor="let quote of quotes;let i=index">
         <li>{{quote.quoteTitle}}</li>

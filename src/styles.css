@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 *{
-    background-image: url(./assets/bg.jpg);
+    /* background-image: url(./assets/bg.jpg); */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,6 +10,12 @@
     /* background-position: center; */
 
 }
+
+p{
+  margin-left: 25rem;
+  padding: 0.8rem;
+}
+
 h1{
     text-align: center;
     color: rgb(131, 8, 131);
@@ -36,7 +42,7 @@ h1{
     font-family: sans-serif;
   }
   a:link {
-    color: rgb(117, 7, 7);
+    color: rgb(7, 14, 117);
     background-color: transparent;
     text-decoration: none;
   }
@@ -46,36 +52,121 @@ h1{
     text-decoration: none;
   } */
   a:hover {
-    color: rgb(73, 9, 146);
+    color: rgb(103, 167, 116);
     background-color: transparent;
     text-decoration: underline;
   }
-  /* quotes styles */
-  .details{
-    
-    display: block;
-    max-width: 300px;
-    max-height: 200px;
-    
-  }
-  .quotes{
-    display: inline;
-  
-  }
-    #list{
-    border: 3px solid #73AD21;
-    background: #5ab60e;
-    color: darkblue;
-    margin-left: 200px;
+
+  /* quotes styles after submission */
+
+#list{
+  border: 1.5px solid #73AD21;
+  margin-left: 10rem;
+  margin-right: 10rem;
   list-style: none;
-  display: inline-block;
-  } 
-  /* #list ul {
-    background: #e41414;
-    padding: 10px;
-  margin-left: 100px;
-  }  */
+  border-radius: 1rem;
+  text-decoration: none;
+  background-color: #00d1e4;
+} 
+/* #list:first-child{
+  color: chocolate;
+} */
+
+#list .user1{
+  margin-left: 14rem;
+}
+
+button {
+  opacity: 0.7;
+  margin-left: 16.5rem;
+}
+
 .delete img{
   max-width: 20px;
   max-height: 20px;
 }
+
+/* Like, Delete and Unlike */
+
+.delete #like {
+  margin: 6px;
+  margin-left: 2rem;
+}
+
+.delete #unlike {
+  margin: 6px;
+}
+
+.delete #delete {
+  margin: 6px;
+  margin-left: 37rem;
+}
+
+/* form */
+
+#form {
+margin-left: 20rem;
+margin-right: 20rem;
+padding: 20px;
+background-color: #cffbff;
+border-radius: 1rem;
+margin-bottom: 1rem;
+}
+
+.form-label-author {
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+
+.form-control-author{
+  border-style: hidden;
+  margin-left: 1.4rem;
+}
+
+/* Quote Details */
+
+.mb-1 {
+  padding: 1rem;
+}
+.form-label-details{
+  padding: 1rem;
+}
+
+.form-control-details {
+  resize: vertical;
+  border-style: hidden;
+}
+
+/* Quote Title */
+
+.mb-2 {
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.form-control-title {
+  margin-left: 1rem;
+  border-style: hidden;
+}
+
+/* Quote Date */
+
+.form-group {
+  margin-left: 2rem;
+}
+
+.form-group-date {
+  margin-left: 1rem;
+}
+
+.Quote-Description {
+  margin-left: 1.2rem;
+  font-style: italic;
+}
+
+.descriptions li{
+  display: inline;
+  padding: 6.5rem;
+  color: rgba(255, 0, 0, 0.548);
+}
+

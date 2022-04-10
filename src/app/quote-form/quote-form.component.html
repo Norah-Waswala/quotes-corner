@@ -1,29 +1,41 @@
+      <p> Borders box are hidden </p>
+    <form #quoteform="ngForm" id="form">
 
-    <form #quoteform="ngForm">
-        <div class="mb-3"></div>
-        <label for="userName" class="form-label">Your userName</label>
-        <br>
-        <input type="text" class="form-control" id="userNameInput" [(ngModel)]="newquote.userName" userName="userName" #userName='ngModel' required placeholder="input userName">
-        <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
+      <!-- Quote Author -->
+
+        <div class="mb-3">
+          <label for="userName" class="form-label-author">Author : </label>
+        
+          <input type="text" class="form-control-author" id="userNameInput" [(ngModel)]="newquote.userName" userName="userName" #userName='ngModel' required placeholder=" author ">
+          <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
             <p>Name is required</p>
             Display {{newquote.userName}}
+          </div>
         </div>
-      <div class="mb-3">
-        <label for="quoteTitle" class="form-label">Quote Title</label>
-        <br>
-        <input type="text" class="form-control" id="quoteTitleInput" placeholder="input Title">
-      </div>
-      <div class="mb-3">
-        <label for="quoteDescription" class="form-label">quote details</label>
-        <br>
-        <input type="text" class="form-control" id="quoteDescriptionInput" placeholder="input quote details">
-      </div>
-      <div class="form-group"></div>
-      <label for="complete">Completion</label>
-          <input type='date' id="complete" required>
+        
 
-      <!-- </div> -->
-      <button type="submit" class="btn btn-success">Add Goal</button>
+        <!-- Quote Details -->
+
+        <div class="mb-1">
+        <label for="quoteDescription" class="form-label-details">Your Qoute : </label>
+        
+        <textarea type="text" class="form-control-details" id="quoteDescriptionInput" placeholder="quote"></textarea>
+      </div>
+
+      <!-- Quote Title -->
+
+      <div class="mb-2">
+        <label for="quoteTitle" class="form-label-title">Quote Title : </label>
+        
+        <input type="text" class="form-control-title" id="quoteTitleInput" placeholder="quote title">
+      </div>
+    <!-- Quote Date -->
+
+      <div class="form-group">
+        <label for="complete">Submitted on : </label>
+          <input type='date' id="complete" class="form-group-date" required> <br>
+          <button  type="submit" class="btn btn-success" style="margin-top: 1rem;"> Add Goal </button>
+      </div>
     </form>
    
   <!-- <div class="mb-3">
