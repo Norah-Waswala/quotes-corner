@@ -1,10 +1,10 @@
       <h2>create your own quote here!</h2>
     
       
-      
+      <div class="container">
       <form (ngSubmit)='submitQuote()' #quoteform="ngForm" id="form" id="forum" class="container">
         <div class="row">
-            <div class="col-md4">
+            <div class="col-md-3">
         <div class="mb-3">
           <label for="userName" class="form-label-author">Author : </label>
         
@@ -16,10 +16,11 @@
           </div> 
         </div>
         
-
+      </div>
         <!-- Quote Details -->
 
         <div class="mb-1">
+          <div class="col-md-3">
         <label for="quoteDescription" class="form-label-details">Your Qoute : </label>
         <textarea type="text" class="form-control-details" id="quoteDescriptionInput" [(ngModel)]="newQuotes.quoteDescription" name="quoteDescription" #quoteDescription='ngModel' placeholder="quote"></textarea>
         <div [hidden]="quoteDescription.valid || userName.pristine" class="alert alert-danger">
@@ -27,31 +28,30 @@
          
         </div>
       </div>
-
+    </div>
       <!-- Quote Title -->
 
       <div class="mb-2">
+        <div class="col-md-3">
         <label for="quoteTitle" class="form-label-title">Quote Title : </label>
         
         <input type="text" class="form-control-title" id="quoteTitleInput" [(ngModel)]="newQuotes.quoteTitle" name="quoteTitle" #quoteTitle='ngModel' placeholder="quote title">
         <div [hidden]="quoteTitle.valid || userName.pristine" class="alert alert-danger">
           <p>Quote Title is required</p>
+        </div>
       </div>
-     </div>
+    </div>
      <!-- Quote Date -->
 
       <div class="form-group">
+        <div class="col-md-3">
         <label for="complete">Submitted on : </label>
           <input type='date' id="complete" class="form-group-date" required> <br>
-          <button  type="submit" class="btn btn-success" style="margin-top: 1rem;"> Add Quote </button>
+          <button  type="submit" class="btn btn-success"> Add Quote </button>
       </div>
-   
     </div>
-     </div>
+    
+  </div>
   </form>
-
-
-  <!-- <div class="mb-3">
-    <label for="formGroupExampleInput2" class="form-label">Another label</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-  </div> -->
+</div>
+ 
