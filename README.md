@@ -34,7 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Technologies Used
   * HTML
   * CSS
-  *Angular
+  * Angular
   ## Set up instructions
   * Open Terminal {Ctrl+Alt+T}
   * Fork the repository 
