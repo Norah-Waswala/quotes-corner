@@ -1,4 +1,6 @@
 # QuotesCorner
+## Link to live site
+https://norah-waswala.github.io/quotes-corner/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
