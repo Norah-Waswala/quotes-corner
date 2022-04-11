@@ -1,6 +1,6 @@
 
     
-      <app-quote-form></app-quote-form>
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     <!-- Quote -->
 
     <div class="quote">
@@ -20,14 +20,3 @@
         </div>
       </ul>
     </div>
-    <!-- <ul>
-      <div  *ngFor="let quote of quotes;let i=index">
-        <li>{{quote.quoteTitle}}</li>
-      
-      
-     
-      <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quote'></app-quotes-details>
-      
-    </div>
-    </ul>
-</div> -->
